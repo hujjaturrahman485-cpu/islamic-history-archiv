@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ইসলামী ইতিহাস | ইসলামের গল্প ও বই আলোচনা</title>
+  <meta name="description" content="ইসলামী ইতিহাসের গল্প, উপন্যাস, সীরাত, সাহাবী কাহিনী ও বই আলোচনা — বিশদ ও প্রফেশনালভাবে।" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bangla:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --primary:#0b3d91;    /* deep blue */
+      --accent:#0ea57a;     /* green */
+      --muted:#6b7280;
+      --card:#ffffff;
+      --bg:#f6f9fb;
+      --gold:#d4a953;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: 'Noto Sans Bangla', 'Roboto', sans-serif;
+      background:var(--bg);
+      color:#0b2135;
+      -webkit-font-smoothing:antialiased;
+    }
+
+    /* Header */
+    header{
+      background:linear-gradient(90deg,var(--primary), #184886);
+      color:#fff;
+      padding:18px 16px;
+    }
+    .topbar{
+      max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:12px;
+    }
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{
+      width:56px;height:56px;border-radius:10px;background:linear-gradient(135deg,var(--accent),var(--gold));
+      display:flex;align-items:center;justify-content:center;font-weight:700;color:#fff;font-size:18px;
+      box-shadow:0 6px 18px rgba(10,35,60,0.18);
+    }
+    .brand h1{margin:0;font-size:18px}
+    .brand p{margin:0;font-size:13px;opacity:0.95}
+
+    nav{margin-top:12px;background:transparent;padding:8px 0;}
+    .navwrap{max-width:1100px;margin:0 auto;display:flex;gap:16px;align-items:center;justify-content:flex-end}
+    .navlink{color:#e6f1fb;text-decoration:none;padding:8px 12px;border-radius:8px;font-weight:600}
+    .navlink:hover{background:rgba(255,255,255,0.06)}
+
+    /* Hero */
+    .hero{
+      max-width:1100px;margin:20px auto;padding:28px;border-radius:12px;
+      background:linear-gradient(180deg, rgba(11,61,145,0.95), rgba(14,165,122,0.95));
+      color:#fff;box-shadow:0 10px 30px rgba(11,61,145,0.12);
+      display:flex;flex-direction:column;gap:14px;
+    }
+    .hero h2{margin:0;font-size:24px}
+    .hero p{margin:0;opacity:0.95}
+
+    /* layout */
+    .main{max-width:1100px;margin:20px auto;display:grid;grid-template-columns:1fr 320px;gap:22px;padding:0 12px}
+    @media (max-width:880px){ .main{grid-template-columns:1fr} .navwrap{justify-content:center} .hero{padding:20px} }
+
+    /* cards */
+    .card{background:var(--card);border-radius:10px;padding:18px;box-shadow:0 8px 20px rgba(12,35,66,0.06)}
+    .post-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+    @media (max-width:680px){ .post-grid{grid-template-columns:1fr} }
+
+    .post .title{font-size:18px;margin:0 0 8px 0;color:var(--primary);font-weight:700}
+    .meta{font-size:13px;color:var(--muted);margin-bottom:8px}
+    .excerpt{font-size:14px;color:#21303a;line-height:1.5}
+
+    .btn{
+      display:inline-block;padding:9px 14px;border-radius:8px;text-decoration:none;font-weight:700;
+      background:var(--accent);color:#fff;
+      box-shadow:0 8px 18px rgba(14,165,122,0.12);
+    }
+
+    /* sidebar */
+    .sidebar .widget + .widget{margin-top:14px}
+    .searchbox input{width:100%;padding:10px;border-radius:8px;border:1px solid #e6eef0}
+    .recent li{margin-bottom:10px;list-style:none}
+    .tag{display:inline-block;padding:6px 10px;border-radius:999px;background:rgba(11,61,145,0.06);color:var(--primary);font-weight:600;margin:6px 6px 0 0;font-size:13px}
+
+    /* footer */
+    footer{margin-top:28px;padding:26px 12px;background:#072a4b;color:#fff}
+    .footwrap{max-width:1100px;margin:0 auto;display:flex;justify-content:space-between;gap:12px;align-items:center}
+    .copyright{opacity:0.9;font-size:14px}
+
+    /* small helpers */
+    .kicker{color:var(--gold);font-weight:800;font-size:13px}
+    .hr{height:1px;background:#eef6f7;border-radius:2px;margin:12px 0}
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="topbar">
+      <div class="brand">
+        <div class="logo">ইহ</div>
+        <div>
+          <h1>ইসলামী ইতিহাস</h1>
+          <p>গবেষণাশীল, শ্রুতিমধুর ও প্রফেশনাল বিশ্লেষণ</p>
+        </div>
+      </div>
+
+      <div class="navwrap" aria-hidden="true">
+        <a class="navlink" href="#">হোম</a>
+        <a class="navlink" href="#">ইতিহাস</a>
+        <a class="navlink" href="#">গল্প</a>
+        <a class="navlink" href="#">বই আলোচনা</a>
+        <a class="navlink" href="#">যোগাযোগ</a>
+      </div>
+    </div>
+
+    <nav></nav>
+  </header>
+
+  <section class="hero">
+    <h2>ইতিহাস কথা বলে — আমরা শোনার কাজে আছি</h2>
+    <p>জাহেলিয়া যুগ থেকে শুরু করে খলিফাগণের সময়কাল, সাহাবী কাহিনি ও গুরুত্বপূর্ণ ঘটনাবলি — সকলকিছু বিশ্লেষণাত্মক ও সহজভাবে সাজানো।</p>
+    <div style="margin-top:12px">
+      <a class="btn" href="#latest">নতুন লেখাসমূহ দেখো</a>
+    </div>
+  </section>
+
+  <main class="main">
+    <div>
+      <div class="card" id="latest">
+        <div style="display:flex;justify-content:space-between;align-items:center">
+          <div>
+            <div class="kicker">সাম্প্রতিক</div>
+            <h3 style="margin:6px 0 0 0">নতুন পোস্টসমূহ</h3>
+          </div>
+          <div style="text-align:right;color:var(--muted);font-size:13px">আপডেট: ২০২৫</div>
+        </div>
+
+        <div class="hr"></div>
+
+        <div class="post-grid">
+          <article class="post card" style="padding:14px">
+            <div class="meta">জাহেলিয়া যুগ • ১০ মিনিট পড়তে</div>
+            <h4 class="title">জাহেলিয়া যুগ — আরব সমাজের পূর্বাবস্থা</h4>
+            <p class="excerpt">মহত্বপূর্ণ সমাজব্যবস্থা, গোত্রনীতি ও কিভাবে ইসলাম তা ভাঙল — সংক্ষিপ্ত বিশ্লেষণ ও উদ্ধৃতি।</p>
+            <div style="margin-top:10px"><a href="#" class="btn">বিস্তারিত পড়ুন</a></div>
+          </article>
+
+          <article class="post card" style="padding:14px">
+            <div class="meta">বদর • ৮ মিনিট পড়তে</div>
+            <h4 class="title">বদরের যুদ্ধের নাটকীয় পর্ব</h4>
+            <p class="excerpt">অল্প সংখ্যায় কোন কারণে মুসলিমেরা বিজয়ী হলো — কৌশল, ইমান ও ঐক্যের গল্প।</p>
+            <div style="margin-top:10px"><a href="#" class="btn">আরও</a></div>
+          </article>
+
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:16px">
+        <div class="kicker">বই আলোচনা</div>
+        <h3 style="margin:8px 0">আর-রাহীকুল ম্যাকতুম — সংক্ষিপ্ত পর্যালোচনা</h3>
+        <p class="excerpt">সীরাত ও ইসলামী ইতিহাসের অন্যতম গুরুত্বপূর্ণ গ্রন্থ। বইয়ের প্রধান দিকগুলো, মূল্যায়ন ও পাঠপ্রস্তাবনা আলোচনা করা হবে এখানে।</p>
+        <div style="margin-top:12px"><a class="btn" href="#">বইটি পড়ুন</a></div>
+      </div>
+
+      <div class="card" style="margin-top:16px">
+        <div class="kicker">সম্পর্কে</div>
+        <h3 style="margin:8px 0">ইসলামী ইতিহাস আর্কাইভ</h3>
+        <p class="excerpt">এই সাইটের উদ্দেশ্য: শিক্ষণীয় ইতিহাস সহজ ভাষায় উপস্থাপন করে, পাঠকদের মধ্যে গবেষণা-মনোভাব সৃষ্টি করা।</p>
+      </div>
+    </div>
+
+    <aside class="sidebar">
+      <div class="card widget searchbox">
+        <h4 style="margin:0 0 8px 0">সাইটে খুঁজুন</h4>
+        <input type="search" placeholder="কিছু লিখে খুঁজুন..." />
+      </div>
+
+      <div class="card widget">
+        <h4 style="margin:0 0 10px 0">সাম্প্রতিক পোস্ট</h4>
+        <ul class="recent" style="padding-left:0;margin:0">
+          <li><a href="#" style="text-decoration:none;color:var(--primary)">নবী ﷺ এর শৈশব</a><div style="font-size:12px;color:var(--muted)">২ সপ্তাহ আগে</div></li>
+          <li><a href="#" style="text-decoration:none;color:var(--primary)">খোলাফায়ে রাশেদীন</a><div style="font-size:12px;color:var(--muted)">১ মাস আগে</div></li>
+          <li><a href="#" style="text-decoration:none;color:var(--primary)">আব্বাসী সুসময়ের সংক্ষিপ্ত চিত্র</a><div style="font-size:12px;color:var(--muted)">৩ মাস আগে</div></li>
+        </ul>
+      </div>
+
+      <div class="card widget">
+        <h4 style="margin:0 0 10px 0">টপ ট্যাগ</h4>
+        <div>
+          <span class="tag">সীরাত</span>
+          <span class="tag">বদর</span>
+          <span class="tag">খিলাফত</span>
+          <span class="tag">বই-সমালোচনা</span>
+        </div>
+      </div>
+
+      <div class="card widget">
+        <h4 style="margin:0 0 10px 0">যোগাযোগ</h4>
+        <p style="margin:0;font-size:14px;color:var(--muted)">ইমেইল: <strong>hujjaturrahman485@gmail.com</strong></p>
+        <div style="margin-top:10px"><a class="btn" href="#">মোর সম্পর্কে</a></div>
+      </div>
+    </aside>
+  </main>
+
+  <footer>
+    <div class="footwrap">
+      <div>
+        <div style="font-weight:700;font-size:16px">ইসলামী ইতিহাস</div>
+        <div style="font-size:13px;opacity:0.9">গবেষণা ও আলোচনা — প্রফেশনাল সাজে</div>
+      </div>
+      <div class="copyright">
+        © ২০২৫ Islamic History • Designed by Rohujjatur Rahman
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ইসলামী ইতিহাস | ইসলামের গল্প ও বই আলোচনা</title>
+  <meta name="description" content="ইসলামী ইতিহাসের গল্প, উপন্যাস, সীরাত, সাহাবী কাহিনী ও বই আলোচনা — বিশদ ও প্রফেশনালভাবে।" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bangla:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --primary:#0b3d91;    /* deep blue */
+      --accent:#0ea57a;     /* green */
+      --muted:#6b7280;
+      --card:#ffffff;
+      --bg:#f6f9fb;
+      --gold:#d4a953;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: 'Noto Sans Bangla', 'Roboto', sans-serif;
+      background:var(--bg);
+      color:#0b2135;
+      -webkit-font-smoothing:antialiased;
+    }
+
+    /* Header */
+    header{
+      background:linear-gradient(90deg,var(--primary), #184886);
+      color:#fff;
+      padding:18px 16px;
+    }
+    .topbar{
+      max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:12px;
+    }
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{
+      width:56px;height:56px;border-radius:10px;background:linear-gradient(135deg,var(--accent),var(--gold));
+      display:flex;align-items:center;justify-content:center;font-weight:700;color:#fff;font-size:18px;
+      box-shadow:0 6px 18px rgba(10,35,60,0.18);
+    }
+    .brand h1{margin:0;font-size:18px}
+    .brand p{margin:0;font-size:13px;opacity:0.95}
+
+    nav{margin-top:12px;background:transparent;padding:8px 0;}
+    .navwrap{max-width:1100px;margin:0 auto;display:flex;gap:16px;align-items:center;justify-content:flex-end}
+    .navlink{color:#e6f1fb;text-decoration:none;padding:8px 12px;border-radius:8px;font-weight:600}
+    .navlink:hover{background:rgba(255,255,255,0.06)}
+
+    /* Hero */
+    .hero{
+      max-width:1100px;margin:20px auto;padding:28px;border-radius:12px;
+      background:linear-gradient(180deg, rgba(11,61,145,0.95), rgba(14,165,122,0.95));
+      color:#fff;box-shadow:0 10px 30px rgba(11,61,145,0.12);
+      display:flex;flex-direction:column;gap:14px;
+    }
+    .hero h2{margin:0;font-size:24px}
+    .hero p{margin:0;opacity:0.95}
+
+    /* layout */
+    .main{max-width:1100px;margin:20px auto;display:grid;grid-template-columns:1fr 320px;gap:22px;padding:0 12px}
+    @media (max-width:880px){ .main{grid-template-columns:1fr} .navwrap{justify-content:center} .hero{padding:20px} }
+
+    /* cards */
+    .card{background:var(--card);border-radius:10px;padding:18px;box-shadow:0 8px 20px rgba(12,35,66,0.06)}
+    .post-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+    @media (max-width:680px){ .post-grid{grid-template-columns:1fr} }
+
+    .post .title{font-size:18px;margin:0 0 8px 0;color:var(--primary);font-weight:700}
+    .meta{font-size:13px;color:var(--muted);margin-bottom:8px}
+    .excerpt{font-size:14px;color:#21303a;line-height:1.5}
+
+    .btn{
+      display:inline-block;padding:9px 14px;border-radius:8px;text-decoration:none;font-weight:700;
+      background:var(--accent);color:#fff;
+      box-shadow:0 8px 18px rgba(14,165,122,0.12);
+    }
+
+    /* sidebar */
+    .sidebar .widget + .widget{margin-top:14px}
+    .searchbox input{width:100%;padding:10px;border-radius:8px;border:1px solid #e6eef0}
+    .recent li{margin-bottom:10px;list-style:none}
+    .tag{display:inline-block;padding:6px 10px;border-radius:999px;background:rgba(11,61,145,0.06);color:var(--primary);font-weight:600;margin:6px 6px 0 0;font-size:13px}
+
+    /* footer */
+    footer{margin-top:28px;padding:26px 12px;background:#072a4b;color:#fff}
+    .footwrap{max-width:1100px;margin:0 auto;display:flex;justify-content:space-between;gap:12px;align-items:center}
+    .copyright{opacity:0.9;font-size:14px}
+
+    /* small helpers */
+    .kicker{color:var(--gold);font-weight:800;font-size:13px}
+    .hr{height:1px;background:#eef6f7;border-radius:2px;margin:12px 0}
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="topbar">
+      <div class="brand">
+        <div class="logo">ইহ</div>
+        <div>
+          <h1>ইসলামী ইতিহাস</h1>
+          <p>গবেষণাশীল, শ্রুতিমধুর ও প্রফেশনাল বিশ্লেষণ</p>
+        </div>
+      </div>
+
+      <div class="navwrap" aria-hidden="true">
+        <a class="navlink" href="#">হোম</a>
+        <a class="navlink" href="#">ইতিহাস</a>
+        <a class="navlink" href="#">গল্প</a>
+        <a class="navlink" href="#">বই আলোচনা</a>
+        <a class="navlink" href="#">যোগাযোগ</a>
+      </div>
+    </div>
+
+    <nav></nav>
+  </header>
+
+  <section class="hero">
+    <h2>ইতিহাস কথা বলে — আমরা শোনার কাজে আছি</h2>
+    <p>জাহেলিয়া যুগ থেকে শুরু করে খলিফাগণের সময়কাল, সাহাবী কাহিনি ও গুরুত্বপূর্ণ ঘটনাবলি — সকলকিছু বিশ্লেষণাত্মক ও সহজভাবে সাজানো।</p>
+    <div style="margin-top:12px">
+      <a class="btn" href="#latest">নতুন লেখাসমূহ দেখো</a>
+    </div>
+  </section>
+
+  <main class="main">
+    <div>
+      <div class="card" id="latest">
+        <div style="display:flex;justify-content:space-between;align-items:center">
+          <div>
+            <div class="kicker">সাম্প্রতিক</div>
+            <h3 style="margin:6px 0 0 0">নতুন পোস্টসমূহ</h3>
+          </div>
+          <div style="text-align:right;color:var(--muted);font-size:13px">আপডেট: ২০২৫</div>
+        </div>
+
+        <div class="hr"></div>
+
+        <div class="post-grid">
+          <article class="post card" style="padding:14px">
+            <div class="meta">জাহেলিয়া যুগ • ১০ মিনিট পড়তে</div>
+            <h4 class="title">জাহেলিয়া যুগ — আরব সমাজের পূর্বাবস্থা</h4>
+            <p class="excerpt">মহত্বপূর্ণ সমাজব্যবস্থা, গোত্রনীতি ও কিভাবে ইসলাম তা ভাঙল — সংক্ষিপ্ত বিশ্লেষণ ও উদ্ধৃতি।</p>
+            <div style="margin-top:10px"><a href="#" class="btn">বিস্তারিত পড়ুন</a></div>
+          </article>
+
+          <article class="post card" style="padding:14px">
+            <div class="meta">বদর • ৮ মিনিট পড়তে</div>
+            <h4 class="title">বদরের যুদ্ধের নাটকীয় পর্ব</h4>
+            <p class="excerpt">অল্প সংখ্যায় কোন কারণে মুসলিমেরা বিজয়ী হলো — কৌশল, ইমান ও ঐক্যের গল্প।</p>
+            <div style="margin-top:10px"><a href="#" class="btn">আরও</a></div>
+          </article>
+
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:16px">
+        <div class="kicker">বই আলোচনা</div>
+        <h3 style="margin:8px 0">আর-রাহীকুল ম্যাকতুম — সংক্ষিপ্ত পর্যালোচনা</h3>
+        <p class="excerpt">সীরাত ও ইসলামী ইতিহাসের অন্যতম গুরুত্বপূর্ণ গ্রন্থ। বইয়ের প্রধান দিকগুলো, মূল্যায়ন ও পাঠপ্রস্তাবনা আলোচনা করা হবে এখানে।</p>
+        <div style="margin-top:12px"><a class="btn" href="#">বইটি পড়ুন</a></div>
+      </div>
+
+      <div class="card" style="margin-top:16px">
+        <div class="kicker">সম্পর্কে</div>
+        <h3 style="margin:8px 0">ইসলামী ইতিহাস আর্কাইভ</h3>
+        <p class="excerpt">এই সাইটের উদ্দেশ্য: শিক্ষণীয় ইতিহাস সহজ ভাষায় উপস্থাপন করে, পাঠকদের মধ্যে গবেষণা-মনোভাব সৃষ্টি করা।</p>
+      </div>
+    </div>
+
+    <aside class="sidebar">
+      <div class="card widget searchbox">
+        <h4 style="margin:0 0 8px 0">সাইটে খুঁজুন</h4>
+        <input type="search" placeholder="কিছু লিখে খুঁজুন..." />
+      </div>
+
+      <div class="card widget">
+        <h4 style="margin:0 0 10px 0">সাম্প্রতিক পোস্ট</h4>
+        <ul class="recent" style="padding-left:0;margin:0">
+          <li><a href="#" style="text-decoration:none;color:var(--primary)">নবী ﷺ এর শৈশব</a><div style="font-size:12px;color:var(--muted)">২ সপ্তাহ আগে</div></li>
+          <li><a href="#" style="text-decoration:none;color:var(--primary)">খোলাফায়ে রাশেদীন</a><div style="font-size:12px;color:var(--muted)">১ মাস আগে</div></li>
+          <li><a href="#" style="text-decoration:none;color:var(--primary)">আব্বাসী সুসময়ের সংক্ষিপ্ত চিত্র</a><div style="font-size:12px;color:var(--muted)">৩ মাস আগে</div></li>
+        </ul>
+      </div>
+
+      <div class="card widget">
+        <h4 style="margin:0 0 10px 0">টপ ট্যাগ</h4>
+        <div>
+          <span class="tag">সীরাত</span>
+          <span class="tag">বদর</span>
+          <span class="tag">খিলাফত</span>
+          <span class="tag">বই-সমালোচনা</span>
+        </div>
+      </div>
+
+      <div class="card widget">
+        <h4 style="margin:0 0 10px 0">যোগাযোগ</h4>
+        <p style="margin:0;font-size:14px;color:var(--muted)">ইমেইল: <strong>hujjaturrahman485@gmail.com</strong></p>
+        <div style="margin-top:10px"><a class="btn" href="#">মোর সম্পর্কে</a></div>
+      </div>
+    </aside>
+  </main>
+
+  <footer>
+    <div class="footwrap">
+      <div>
+        <div style="font-weight:700;font-size:16px">ইসলামী ইতিহাস</div>
+        <div style="font-size:13px;opacity:0.9">গবেষণা ও আলোচনা — প্রফেশনাল সাজে</div>
+      </div>
+      <div class="copyright">
+        © ২০২৫ Islamic History • Designed by Rohujjatur Rahman
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
