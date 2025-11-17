@@ -143,8 +143,9 @@
             <div class="meta">জাহেলিয়া যুগ • ১০ মিনিট পড়তে</div>
             <h4 class="title">জাহেলিয়া যুগ — আরব সমাজের পূর্বাবস্থা</h4>
             <p class="excerpt">মহত্বপূর্ণ সমাজব্যবস্থা, গোত্রনীতি ও কিভাবে ইসলাম তা ভাঙল — সংক্ষিপ্ত বিশ্লেষণ ও উদ্ধৃতি।</p>
-            <div style="margin-top:10px"><a href="#" class="btn">বিস্তারিত পড়ুন</a></div>
-          </article>
+            <div style="margin-top:10px"><a <div style="margin-top:10px"><a href="tribes-history.html" class="btn">বিস্তারিত পড়ুন</a></div>
+            
+      
 
           <article class="post card" style="padding:14px">
             <div class="meta">বদর • ৮ মিনিট পড়তে</div>
